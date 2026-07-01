@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Service Center</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f5f5;
+}
+
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+.price{
+    color:green;
+    font-size:28px;
+    font-weight:bold;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    background:#007bff;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.qr{
+    max-width:250px;
+    display:block;
+    margin:auto;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:#111;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mobile Service Center</h1>
+    <p>Fast & Reliable Mobile Services</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Featured Service</h2>
+        <h3>iPhone 16 Service</h3>
+        <p class="price">₹6000</p>
+        <p>Processing time: 1–24 Hours</p>
+    </div>
+
+    <div class="card">
+        <h2>Submit Order</h2>
+
+        <form>
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="text" placeholder="Phone Number" required>
+
+            <input type="text" placeholder="Device Model" required>
+
+            <input type="text" placeholder="IMEI / Order Details" required>
+
+            <textarea placeholder="Additional Information"></textarea>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>Payment</h2>
+
+        <p>Scan QR Code and complete payment.</p>
+
+        <!-- Replace qr.png with your QR image -->
+        <img src="qr.png" class="qr" alt="Payment QR">
+
+        <p><strong>After payment, send Transaction ID.</strong></p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Mobile Service Center
+</footer>
+
+</body>
+</html>
